@@ -1,10 +1,15 @@
 class Notification {
+  // 변수
   late String message;
   late DateTime timestamp;
+
+  // 생성자
   Notification(this.message, this.timestamp);
+  
   Notification.forNow(this.message) {
     timestamp = new DateTime.now();
   }
+  
 }
 
 class Observable {
